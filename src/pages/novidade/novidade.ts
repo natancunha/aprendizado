@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { NovaPage } from '../nova/nova';
+
 /**
  * Generated class for the NovidadePage page.
  *
@@ -20,6 +22,10 @@ export class NovidadePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NovidadePage');
+  }
+
+  gotoNova(){
+    this.navCtrl.push(NovaPage);
   }
 
 }
